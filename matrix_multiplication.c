@@ -1,11 +1,9 @@
 
 
-#ifdef DTYPE
+#ifdef DTYPE_code
 // Use the user-defined matrix type
-typedef DTYPE dtype;
 #else
-#define DTYPE int
-typedef int dtype;
+#define DTYPE_code 0
 #endif
 
 #ifdef BLOCK
@@ -13,13 +11,19 @@ typedef int dtype;
 #define BLOCK 8
 #endif
 
-#if DTYPE == int
+#if DTYPE_code == 0
+#define DTYPE int
+typedef int dtype;
 #define DTYPE_spec "%d"
 #define DTYPE_str "INT"
-#elif DTYPE == float
+#elif DTYPE_code == 1
+#define DTYPE float
+typedef float dtype;
 #define DTYPE_spec "%f"
 #define DTYPE_str "FLOAT"
-#elif DTYPE == double
+#elif DTYPE_code == 2
+#define DTYPE double
+typedef double dtype;
 #define DTYPE_spec "%lf"
 #define DTYPE_str "DOUBLE"
 #endif

@@ -1,29 +1,36 @@
-CC= C++
-LIB_HOME=-----
-LIBS = -std=c++14 -03 -lm
+CC= gcc
+LIB_HOME=src
+LIBS = -lm
+INCLUDE = -Isrc
+OPT = #-std=c++14 -O3
 
-MAIN = src/matrix_mutiplication.c
+DTYPE = 2
+TIMES = 3
+UPTO = 15
+MAIN = matrix_multiplication.c
 
 
 BUILDDIR :=obj
 TARGETDIR :=bin
 
-all:$(TARGETDIR)/lab1
+all:$(TARGETDIR)/runnable_${DTYPE}
 
 debug:OPT += -DDEBUG -g
 
 debug:NVCC_FLAG += -G
 debug:all
 
+
 OBJECTS=$(BUILDDIR)/my_library.o
 
-$(TARGETDIR)/lab1:${MAIN} $(OBJECTS)
+$(TARGETDIR)/runnable_${DTYPE}: ${MAIN} $(OBJECTS)
 	@mkdir -p $(@D)
-	$(CC) $^ -o $@ $(INCLUDE) $(LIBS) $(OPT)
-
-$(BUILDDIR)/my_library.o: src/my_Library.c
+	$(CC) $^ -o $@ $(INCLUDE) $(LIBS) $(OPT) -D DTYPE_code=$(DTYPE)
+	
+$(BUILDDIR)/my_library.o: src/my_library.c
 	mkdir -p $(BUILDDIR) $(TARGETDIR)
 	$(CC) -c -o $@ $(LIBS) $(INCLUDE) src/my_library.c $(OPT)
+
 
 clean:
 	rm $(BUILDDIR)/*.o $(TARGETDIR)/*

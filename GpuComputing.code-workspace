@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "SSH FS - marzola",
+			"uri": "ssh://marzola/home/emmanuele.coppola"
+		}
+	],
+	"settings": {}
+}
