@@ -2,8 +2,8 @@ CC= gcc
 LIB_HOME=src
 LIBS = -lm
 INCLUDE = -Isrc
-OPT = -O
-OPT_NUM = 0
+OPT = #-std=c++14 -O3
+
 DTYPE = 2
 TIMES = 3
 UPTO = 15
@@ -26,11 +26,11 @@ OBJECTS=$(BUILDDIR)/my_library.o
 
 $(TARGETDIR)/runnable_${DTYPE}: ${MAIN} $(OBJECTS)
 	@mkdir -p $(@D)
-	$(CC) $^ -o $@ $(INCLUDE) $(LIBS) $(OPT)$(OPT_NUM) -D DTYPE_code=$(DTYPE)
+	$(CC) $^ -o $@ $(INCLUDE) $(LIBS) $(OPT) -D DTYPE_code=$(DTYPE)
 	
 $(BUILDDIR)/my_library.o: src/my_library.c
 	mkdir -p $(BUILDDIR) $(TARGETDIR)
-	$(CC) -c -o $@ $(LIBS) $(OPT)$(OPT_NUM) $(INCLUDE) src/my_library.c 
+	$(CC) -c -o $@ $(LIBS) $(INCLUDE) src/my_library.c $(OPT)
 
 
 clean:
