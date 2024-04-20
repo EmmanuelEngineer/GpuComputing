@@ -7,7 +7,7 @@ OPT = #-std=c++14 -O3
 DTYPE = 2
 TIMES = 3
 UPTO = 15
-MAIN = matrix_multiplication.c
+MAIN = matrix_transposition.c
 
 
 BUILDDIR :=obj

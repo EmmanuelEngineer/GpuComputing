@@ -1,5 +1,3 @@
-
-
 #ifdef DTYPE_code
 // Use the user-defined matrix type
 #else
@@ -57,19 +55,17 @@ int main(int argc, char **argv)
     power = atoi(argv[1]);
     long double array_dim = powl((long double)2, (long double)power);
 
-    dtype **A, **B, **C;
+    dtype **A, **B;
     int data_dim = sizeof(DTYPE);
 
     fprintf(stdout, "dimension of matrices pow 2 at %d, %Lf total with type" DTYPE_str "\n", power, array_dim);
     A = malloc(array_dim * sizeof(void *));
     B = malloc(array_dim * sizeof(void *));
-    C = malloc(array_dim * sizeof(void *));
 
     for (int x = 0; x < array_dim; x++)
     {
         A[x] = malloc(array_dim * data_dim);
         B[x] = malloc(array_dim * data_dim);
-        C[x] = malloc(array_dim * data_dim);
     }
 
     for (int i = 0; i < array_dim; i++)
@@ -79,7 +75,6 @@ int main(int argc, char **argv)
             for (int h = 0; h < array_dim; h++)
             {
                 (*(*(A + i) + h)) = rand() % 100;
-                (*(*(B + i) + h)) = rand() % 100;
             }
         }
     }
@@ -97,7 +92,7 @@ int main(int argc, char **argv)
             {
                 // accumulo
                 for (int h = 0; h < array_dim; h++)
-                    *(*(C + i) + j) += (*(*(A + i) + h) * *(*(B + h) + j));
+                    *(*(B + h) + j) = *(*(A + i) + h);
             }
         }
         t = clock() - t;
@@ -121,9 +116,8 @@ int main(int argc, char **argv)
     double time_taken = ((double)t) / CLOCKS_PER_SEC;
 
     fprintf(stdout, "Your calculations took %lf seconds to run.\n", time_taken);
-    /*printMatrix(A, "A", array_dim, array_dim);
+    printMatrix(A, "A", array_dim, array_dim);
     printMatrix(B, "B", array_dim, array_dim);
-    printMatrix(C, "C", array_dim, array_dim);*/
 
     fprintf(stdout, "\n");
 
@@ -131,7 +125,6 @@ int main(int argc, char **argv)
     {
         free(A[x]);
         free(B[x]);
-        free(C[x]);
     }
 
     free(A);
