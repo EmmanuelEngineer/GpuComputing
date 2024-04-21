@@ -9,7 +9,7 @@ TIMES = 3
 UPTO = 15
 MAIN = matrix_transposition.c
 BLOCK = 0
-export
+
 
 BUILDDIR :=obj
 TARGETDIR :=bin

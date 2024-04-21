@@ -1,0 +1,845 @@
+emmavicos-chicken-boiler
+    descrizione: Notebook
+    prodotto: Stealth 16Studio A13VG (15F2.1)
+    fornitore: Micro-Star International Co., Ltd.
+    versione: REV:1.0
+    seriale: 9S715F212036ZNA000008
+    larghezza: 64 bits
+    capacità: smbios-3.5.0 dmi-3.5.0 smp vsyscall32
+    configurazione: boot=normal chassis=notebook family=GS sku=15F2.1 uuid=022bae90-42ff-5d42-b48f-0cf35c6fc22c
+  *-core
+       descrizione: Scheda madre
+       prodotto: MS-15F2
+       fornitore: Micro-Star International Co., Ltd.
+       id fisico: 0
+       versione: REV:1.0
+       seriale: BSS-0123456789
+       slot: Default string
+     *-firmware
+          descrizione: BIOS
+          fornitore: American Megatrends International, LLC.
+          id fisico: 1
+          versione: E15F2IMS.10D
+          date: 08/08/2023
+          dimensione: 64KiB
+          capacità: 16MiB
+          capacità: pci upgrade shadowing cdboot bootselect edd int13floppynec int13floppytoshiba int13floppy360 int13floppy1200 int13floppy720 int13floppy2880 int5printscreen int9keyboard int14serial int17printer int10video acpi usb biosbootspecification uefi
+     *-memory
+          descrizione: Memoria di sistema
+          id fisico: 3b
+          slot: Scheda di sistema o scheda madre
+          dimensione: 32GiB
+        *-bank:0
+             descrizione: SODIMM Sincrono 5600 MHz (0,2 ns)
+             prodotto: HMCG78AGBSA095N
+             fornitore: SK Hynix
+             id fisico: 0
+             seriale: 37AC6D9A
+             slot: Controller0-ChannelA-DIMM0
+             dimensione: 16GiB
+             larghezza: 64 bits
+             orologio: 1305MHz (0.8ns)
+        *-bank:1
+             descrizione: SODIMM Sincrono 5600 MHz (0,2 ns)
+             prodotto: HMCG78AGBSA095N
+             fornitore: SK Hynix
+             id fisico: 1
+             seriale: 37AC6F45
+             slot: Controller1-ChannelA-DIMM0
+             dimensione: 16GiB
+             larghezza: 64 bits
+             orologio: 1305MHz (0.8ns)
+     *-cache:0
+          descrizione: L1 cache
+          id fisico: 46
+          slot: L1 Cache
+          dimensione: 288KiB
+          capacità: 288KiB
+          capacità: synchronous internal write-back data
+          configurazione: level=1
+     *-cache:1
+          descrizione: L1 cache
+          id fisico: 47
+          slot: L1 Cache
+          dimensione: 192KiB
+          capacità: 192KiB
+          capacità: synchronous internal write-back instruction
+          configurazione: level=1
+     *-cache:2
+          descrizione: L2 cache
+          id fisico: 48
+          slot: L2 Cache
+          dimensione: 7680KiB
+          capacità: 7680KiB
+          capacità: synchronous internal write-back unified
+          configurazione: level=2
+     *-cache:3
+          descrizione: L3 cache
+          id fisico: 49
+          slot: L3 Cache
+          dimensione: 24MiB
+          capacità: 24MiB
+          capacità: synchronous internal write-back unified
+          configurazione: level=3
+     *-cache:4
+          descrizione: L1 cache
+          id fisico: 4a
+          slot: L1 Cache
+          dimensione: 256KiB
+          capacità: 256KiB
+          capacità: synchronous internal write-back data
+          configurazione: level=1
+     *-cache:5
+          descrizione: L1 cache
+          id fisico: 4b
+          slot: L1 Cache
+          dimensione: 512KiB
+          capacità: 512KiB
+          capacità: synchronous internal write-back instruction
+          configurazione: level=1
+     *-cache:6
+          descrizione: L2 cache
+          id fisico: 4c
+          slot: L2 Cache
+          dimensione: 4MiB
+          capacità: 4MiB
+          capacità: synchronous internal write-back unified
+          configurazione: level=2
+     *-cache:7
+          descrizione: L3 cache
+          id fisico: 4d
+          slot: L3 Cache
+          dimensione: 24MiB
+          capacità: 24MiB
+          capacità: synchronous internal write-back unified
+          configurazione: level=3
+     *-cpu
+          descrizione: CPU
+          prodotto: 13th Gen Intel(R) Core(TM) i7-13700H
+          fornitore: Intel Corp.
+          id fisico: 4e
+          bus info: cpu@0
+          versione: 6.186.2
+          seriale: To Be Filled By O.E.M.
+          slot: U3E1
+          dimensione: 1808MHz
+          capacità: 4800MHz
+          larghezza: 64 bits
+          orologio: 100MHz
+          capacità: lm fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp x86-64 constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities cpufreq
+          configurazione: cores=14 enabledcores=14 microcode=16668 threads=14
+     *-pci:0
+          descrizione: Host bridge
+          prodotto: Intel Corporation
+          fornitore: Intel Corporation
+          id fisico: 100
+          bus info: pci@0000:00:00.0
+          versione: 00
+          larghezza: 32 bits
+          orologio: 33MHz
+          configurazione: driver=igen6_edac
+          risorse: irq:0
+        *-pci:0
+             descrizione: PCI bridge
+             prodotto: Intel Corporation
+             fornitore: Intel Corporation
+             id fisico: 1
+             bus info: pci@0000:00:01.0
+             versione: 00
+             larghezza: 32 bits
+             orologio: 33MHz
+             capacità: pci pciexpress msi pm normal_decode bus_master cap_list
+             configurazione: driver=pcieport
+             risorse: irq:122 ioport:5000(dimensione=4096) memoria:85000000-860fffff ioport:6000000000(dimensione=8623489024)
+           *-display
+                descrizione: VGA compatible controller
+                prodotto: NVIDIA Corporation
+                fornitore: NVIDIA Corporation
+                id fisico: 0
+                bus info: pci@0000:01:00.0
+                nome logico: /dev/fb0
+                versione: a1
+                larghezza: 64 bits
+                orologio: 33MHz
+                capacità: pm msi pciexpress vga_controller bus_master cap_list rom fb
+                configurazione: depth=32 driver=nvidia latency=0 mode=2560x1600 visual=truecolor xres=2560 yres=1600
+                risorse: iomemory:600-5ff iomemory:620-61f irq:216 memoria:85000000-85ffffff memoria:6000000000-61ffffffff memoria:6200000000-6201ffffff ioport:5000(dimensione=128) memoria:86000000-8607ffff
+           *-multimedia
+                descrizione: Audio device
+                prodotto: NVIDIA Corporation
+                fornitore: NVIDIA Corporation
+                id fisico: 0.1
+                bus info: pci@0000:01:00.1
+                nome logico: card0
+                nome logico: /dev/snd/controlC0
+                nome logico: /dev/snd/hwC0D0
+                nome logico: /dev/snd/pcmC0D3p
+                nome logico: /dev/snd/pcmC0D7p
+                nome logico: /dev/snd/pcmC0D8p
+                nome logico: /dev/snd/pcmC0D9p
+                versione: a1
+                larghezza: 32 bits
+                orologio: 33MHz
+                capacità: pm msi pciexpress bus_master cap_list
+                configurazione: driver=snd_hda_intel latency=0
+                risorse: irq:17 memoria:86080000-86083fff
+              *-input:0
+                   prodotto: HDA NVidia HDMI/DP,pcm=3
+                   id fisico: 0
+                   nome logico: input26
+                   nome logico: /dev/input/event15
+              *-input:1
+                   prodotto: HDA NVidia HDMI/DP,pcm=7
+                   id fisico: 1
+                   nome logico: input27
+                   nome logico: /dev/input/event20
+              *-input:2
+                   prodotto: HDA NVidia HDMI/DP,pcm=8
+                   id fisico: 2
+                   nome logico: input28
+                   nome logico: /dev/input/event21
+              *-input:3
+                   prodotto: HDA NVidia HDMI/DP,pcm=9
+                   id fisico: 3
+                   nome logico: input29
+                   nome logico: /dev/input/event22
+        *-display
+             descrizione: VGA compatible controller
+             prodotto: Intel Corporation
+             fornitore: Intel Corporation
+             id fisico: 2
+             bus info: pci@0000:00:02.0
+             nome logico: /dev/fb0
+             versione: 04
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pciexpress msi pm vga_controller bus_master cap_list rom fb
+             configurazione: depth=32 driver=i915 latency=0 resolution=2560,1600
+             risorse: iomemory:620-61f iomemory:400-3ff irq:197 memoria:622e000000-622effffff memoria:4000000000-400fffffff ioport:6000(dimensione=64) memoria:c0000-dffff memoria:4010000000-4016ffffff memoria:4020000000-40ffffffff
+        *-generic:0
+             descrizione: Signal processing controller
+             prodotto: Intel Corporation
+             fornitore: Intel Corporation
+             id fisico: 4
+             bus info: pci@0000:00:04.0
+             versione: 00
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: msi pm bus_master cap_list
+             configurazione: driver=proc_thermal_pci latency=0
+             risorse: iomemory:620-61f irq:16 memoria:622f240000-622f25ffff
+        *-pci:1
+             descrizione: PCI bridge
+             prodotto: Intel Corporation
+             fornitore: Intel Corporation
+             id fisico: 6
+             bus info: pci@0000:00:06.0
+             versione: 00
+             larghezza: 32 bits
+             orologio: 33MHz
+             capacità: pci pciexpress msi pm normal_decode bus_master cap_list
+             configurazione: driver=pcieport
+             risorse: irq:123
+        *-pci:2
+             descrizione: PCI bridge
+             prodotto: Intel Corporation
+             fornitore: Intel Corporation
+             id fisico: 7
+             bus info: pci@0000:00:07.0
+             versione: 00
+             larghezza: 32 bits
+             orologio: 33MHz
+             capacità: pci pciexpress msi pm normal_decode bus_master cap_list
+             configurazione: driver=pcieport
+             risorse: irq:124 ioport:7000(dimensione=4096) memoria:78000000-841fffff ioport:6210000000(dimensione=469762048)
+        *-generic:1 NON RECLAMATO
+             descrizione: System peripheral
+             prodotto: Intel Corporation
+             fornitore: Intel Corporation
+             id fisico: 8
+             bus info: pci@0000:00:08.0
+             versione: 00
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: msi pm cap_list
+             configurazione: latency=0
+             risorse: iomemory:620-61f memoria:622f291000-622f291fff
+        *-usb:0
+             descrizione: USB controller
+             prodotto: Intel Corporation
+             fornitore: Intel Corporation
+             id fisico: d
+             bus info: pci@0000:00:0d.0
+             versione: 00
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pm msi xhci bus_master cap_list
+             configurazione: driver=xhci_hcd latency=0
+             risorse: iomemory:620-61f irq:146 memoria:622f270000-622f27ffff
+           *-usbhost:0
+                prodotto: xHCI Host Controller
+                fornitore: Linux 6.8.0-76060800daily20240311-generic xhci-hcd
+                id fisico: 0
+                bus info: usb@1
+                nome logico: usb1
+                versione: 6.08
+                capacità: usb-2.00
+                configurazione: driver=hub slots=1 speed=480Mbit/s
+           *-usbhost:1
+                prodotto: xHCI Host Controller
+                fornitore: Linux 6.8.0-76060800daily20240311-generic xhci-hcd
+                id fisico: 1
+                bus info: usb@2
+                nome logico: usb2
+                versione: 6.08
+                capacità: usb-3.10
+                configurazione: driver=hub slots=4 speed=10000Mbit/s
+        *-usb:1
+             descrizione: USB controller
+             prodotto: Intel Corporation
+             fornitore: Intel Corporation
+             id fisico: d.2
+             bus info: pci@0000:00:0d.2
+             versione: 00
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pm msi msix usb4_host_interface bus_master cap_list
+             configurazione: driver=thunderbolt latency=0
+             risorse: iomemory:620-61f iomemory:620-61f irq:16 memoria:622f200000-622f23ffff memoria:622f290000-622f290fff
+        *-raid
+             descrizione: RAID bus controller
+             prodotto: Intel Corporation
+             fornitore: Intel Corporation
+             id fisico: e
+             bus info: pci@0000:00:0e.0
+             versione: 00
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: raid msix pciexpress pm bus_master cap_list
+             configurazione: driver=vmd latency=0
+             risorse: iomemory:620-61f iomemory:620-61f irq:0 memoria:622c000000-622dffffff memoria:76000000-77ffffff memoria:622f100000-622f1fffff
+        *-usb:2
+             descrizione: USB controller
+             prodotto: Alder Lake PCH USB 3.2 xHCI Host Controller
+             fornitore: Intel Corporation
+             id fisico: 14
+             bus info: pci@0000:00:14.0
+             versione: 01
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pm msi xhci bus_master cap_list
+             configurazione: driver=xhci_hcd latency=0
+             risorse: iomemory:620-61f irq:155 memoria:622f260000-622f26ffff
+           *-usbhost:0
+                prodotto: xHCI Host Controller
+                fornitore: Linux 6.8.0-76060800daily20240311-generic xhci-hcd
+                id fisico: 0
+                bus info: usb@3
+                nome logico: usb3
+                versione: 6.08
+                capacità: usb-2.00
+                configurazione: driver=hub slots=12 speed=480Mbit/s
+              *-usb:0
+                   descrizione: Video
+                   prodotto: FHD Camera
+                   fornitore: SunplusIT Inc
+                   id fisico: 1
+                   bus info: usb@3:1
+                   versione: 4.09
+                   seriale: 01.00.00
+                   capacità: usb-2.01
+                   configurazione: driver=uvcvideo maxpower=500mA speed=480Mbit/s
+              *-usb:1 NON RECLAMATO
+                   descrizione: Dispositivo USB generico
+                   prodotto: Goodix USB2.0 MISC
+                   fornitore: Goodix Technology Co., Ltd.
+                   id fisico: 3
+                   bus info: usb@3:3
+                   versione: 1.00
+                   seriale: UIDA343C6CF_XXXX_MOC_B0
+                   capacità: usb-2.00
+                   configurazione: maxpower=100mA speed=12Mbit/s
+              *-usb:2
+                   descrizione: Dispositivo di interfacciamento umano
+                   prodotto: SteelSeries SteelSeries KLC
+                   fornitore: SteelSeries
+                   id fisico: 4
+                   bus info: usb@3:4
+                   nome logico: input10
+                   nome logico: /dev/input/event7
+                   versione: 1.20
+                   capacità: usb-2.00 usb
+                   configurazione: driver=usbhid maxpower=300mA speed=12Mbit/s
+              *-usb:3
+                   descrizione: Interfaccia wireless Bluetooth
+                   fornitore: Intel Corp.
+                   id fisico: a
+                   bus info: usb@3:a
+                   versione: 0.00
+                   capacità: bluetooth usb-2.01
+                   configurazione: driver=btusb maxpower=100mA speed=12Mbit/s
+           *-usbhost:1
+                prodotto: xHCI Host Controller
+                fornitore: Linux 6.8.0-76060800daily20240311-generic xhci-hcd
+                id fisico: 1
+                bus info: usb@4
+                nome logico: usb4
+                versione: 6.08
+                capacità: usb-3.10
+                configurazione: driver=hub slots=4 speed=10000Mbit/s
+        *-memory NON RECLAMATO
+             descrizione: RAM memory
+             prodotto: Alder Lake PCH Shared SRAM
+             fornitore: Intel Corporation
+             id fisico: 14.2
+             bus info: pci@0000:00:14.2
+             versione: 01
+             larghezza: 64 bits
+             orologio: 33MHz (30.3ns)
+             capacità: pm cap_list
+             configurazione: latency=0
+             risorse: iomemory:620-61f iomemory:620-61f memoria:622f288000-622f28bfff memoria:622f28f000-622f28ffff
+        *-network
+             descrizione: Interfaccia Wireless
+             prodotto: Intel Corporation
+             fornitore: Intel Corporation
+             id fisico: 14.3
+             bus info: pci@0000:00:14.3
+             nome logico: wlo1
+             versione: 01
+             seriale: 30:05:05:eb:4d:0d
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pm msi pciexpress msix bus_master cap_list ethernet physical wireless
+             configurazione: broadcast=yes driver=iwlwifi driverversion=6.8.0-76060800daily20240311-gen firmware=86.fb5c9aeb.0 so-a0-gf-a0-86.uc ip=192.168.162.127 latency=0 link=yes multicast=yes wireless=IEEE 802.11
+             risorse: iomemory:620-61f irq:16 memoria:622f284000-622f287fff
+        *-serial:0
+             descrizione: Serial bus controller
+             prodotto: Alder Lake PCH Serial IO I2C Controller #0
+             fornitore: Intel Corporation
+             id fisico: 15
+             bus info: pci@0000:00:15.0
+             versione: 01
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pm bus_master cap_list
+             configurazione: driver=intel-lpss latency=0
+             risorse: irq:27 memoria:4017200000-4017200fff
+        *-communication
+             descrizione: Communication controller
+             prodotto: Alder Lake PCH HECI Controller
+             fornitore: Intel Corporation
+             id fisico: 16
+             bus info: pci@0000:00:16.0
+             versione: 01
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pm msi bus_master cap_list
+             configurazione: driver=mei_me latency=0
+             risorse: iomemory:620-61f irq:182 memoria:622f28d000-622f28dfff
+        *-pci:3
+             descrizione: PCI bridge
+             prodotto: Intel Corporation
+             fornitore: Intel Corporation
+             id fisico: 1c
+             bus info: pci@0000:00:1c.0
+             versione: 01
+             larghezza: 32 bits
+             orologio: 33MHz
+             capacità: pci pciexpress msi pm normal_decode bus_master cap_list
+             configurazione: driver=pcieport
+             risorse: irq:125 ioport:4000(dimensione=4096) memoria:86200000-86bfffff ioport:4017000000(dimensione=2097152)
+           *-generic
+                descrizione: MMC Host
+                prodotto: RTS525A PCI Express Card Reader
+                fornitore: Realtek Semiconductor Co., Ltd.
+                id fisico: 0
+                bus info: pci@0000:2d:00.0
+                nome logico: mmc0
+                versione: 01
+                larghezza: 32 bits
+                orologio: 33MHz
+                capacità: pm msi pciexpress bus_master cap_list
+                configurazione: driver=rtsx_pci latency=0
+                risorse: irq:154 memoria:86200000-86200fff
+              *-device
+                   descrizione: SD Card
+                   prodotto: FD4Q5
+                   fornitore: Unknown (27)
+                   id fisico: 59b4
+                   nome logico: /dev/mmcblk0
+                   versione: 3.0
+                   date: 10/2022
+                   seriale: 3668399443
+                   dimensione: 119GiB (128GB)
+                   capacità: sd partitioned partitioned:dos
+                   configurazione: logicalsectorsize=512 sectorsize=512 signature=f57847fc
+                 *-volume:0
+                      descrizione: HPFS/NTFS partition
+                      id fisico: 1
+                      nome logico: /dev/mmcblk0p1
+                      nome logico: /media/emmavico/Ventoy
+                      capacità: 119GiB
+                      capacità: primary bootable
+                      configurazione: mount.fstype=exfat mount.options=rw,nosuid,nodev,relatime,uid=1000,gid=1000,fmask=0022,dmask=0022,iocharset=utf8,errors=remount-ro state=mounted
+                 *-volume:1
+                      descrizione: Windows FAT volume
+                      fornitore: mkfs.fat
+                      id fisico: 2
+                      nome logico: /dev/mmcblk0p2
+                      versione: FAT16
+                      seriale: 3f32-27f5
+                      dimensione: 31MiB
+                      capacità: 32MiB
+                      capacità: primary boot fat initialized
+                      configurazione: FATs=2 filesystem=fat label=VTOYEFI
+        *-pci:4
+             descrizione: PCI bridge
+             prodotto: Alder Lake PCH-P PCI Express Root Port #9
+             fornitore: Intel Corporation
+             id fisico: 1c.7
+             bus info: pci@0000:00:1c.7
+             versione: 01
+             larghezza: 32 bits
+             orologio: 33MHz
+             capacità: pci pciexpress msi pm normal_decode bus_master cap_list
+             configurazione: driver=pcieport
+             risorse: irq:126 ioport:3000(dimensione=4096) memoria:86c00000-86cfffff
+           *-network
+                descrizione: Ethernet interface
+                prodotto: Killer E3000 2.5GbE Controller
+                fornitore: Realtek Semiconductor Co., Ltd.
+                id fisico: 0
+                bus info: pci@0000:2e:00.0
+                nome logico: enp46s0
+                versione: 06
+                seriale: d8:43:ae:0d:f6:06
+                capacità: 1Gbit/s
+                larghezza: 64 bits
+                orologio: 33MHz
+                capacità: pm msi pciexpress msix vpd bus_master cap_list ethernet physical tp mii 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+                configurazione: autonegotiation=on broadcast=yes driver=r8169 driverversion=6.8.0-76060800daily20240311-gen firmware=rtl8125b-2_0.0.2 07/13/20 latency=0 link=no multicast=yes port=twisted pair
+                risorse: irq:19 ioport:3000(dimensione=256) memoria:86c00000-86c0ffff memoria:86c10000-86c13fff
+        *-isa
+             descrizione: ISA bridge
+             prodotto: Intel Corporation
+             fornitore: Intel Corporation
+             id fisico: 1f
+             bus info: pci@0000:00:1f.0
+             versione: 01
+             larghezza: 32 bits
+             orologio: 33MHz
+             capacità: isa bus_master
+             configurazione: latency=0
+           *-pnp00:00
+                prodotto: PnP device MSI0007
+                id fisico: 0
+                capacità: pnp
+                configurazione: driver=i8042 kbd
+           *-pnp00:01
+                prodotto: PnP device ETD0316
+                id fisico: 1
+                capacità: pnp
+                configurazione: driver=i8042 aux
+           *-pnp00:02
+                prodotto: PnP device PNP0c02
+                id fisico: 2
+                capacità: pnp
+                configurazione: driver=system
+           *-pnp00:03
+                prodotto: PnP device PNP0c02
+                id fisico: 3
+                capacità: pnp
+                configurazione: driver=system
+           *-pnp00:04
+                prodotto: PnP device PNP0c02
+                id fisico: 4
+                capacità: pnp
+                configurazione: driver=system
+           *-pnp00:05
+                prodotto: PnP device PNP0c02
+                id fisico: 5
+                capacità: pnp
+                configurazione: driver=system
+           *-pnp00:06
+                prodotto: PnP device PNP0c02
+                id fisico: 6
+                capacità: pnp
+                configurazione: driver=system
+        *-multimedia
+             descrizione: Multimedia audio controller
+             prodotto: Intel Corporation
+             fornitore: Intel Corporation
+             id fisico: 1f.3
+             bus info: pci@0000:00:1f.3
+             nome logico: card1
+             nome logico: /dev/snd/controlC1
+             nome logico: /dev/snd/hwC1D0
+             nome logico: /dev/snd/hwC1D2
+             nome logico: /dev/snd/pcmC1D0c
+             nome logico: /dev/snd/pcmC1D0p
+             nome logico: /dev/snd/pcmC1D1c
+             nome logico: /dev/snd/pcmC1D1p
+             nome logico: /dev/snd/pcmC1D3p
+             nome logico: /dev/snd/pcmC1D4p
+             nome logico: /dev/snd/pcmC1D5p
+             nome logico: /dev/snd/pcmC1D6c
+             nome logico: /dev/snd/pcmC1D7c
+             versione: 01
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pm msi bus_master cap_list
+             configurazione: driver=sof-audio-pci-intel-tgl latency=32
+             risorse: iomemory:620-61f iomemory:620-61f irq:217 memoria:622f280000-622f283fff memoria:622f000000-622f0fffff
+        *-serial:1
+             descrizione: SMBus
+             prodotto: Alder Lake PCH-P SMBus Host Controller
+             fornitore: Intel Corporation
+             id fisico: 1f.4
+             bus info: pci@0000:00:1f.4
+             versione: 01
+             larghezza: 64 bits
+             orologio: 33MHz
+             configurazione: driver=i801_smbus latency=0
+             risorse: iomemory:620-61f irq:16 memoria:622f28c000-622f28c0ff ioport:efa0(dimensione=32)
+        *-serial:2
+             descrizione: Serial bus controller
+             prodotto: Alder Lake-P PCH SPI Controller
+             fornitore: Intel Corporation
+             id fisico: 1f.5
+             bus info: pci@0000:00:1f.5
+             versione: 01
+             larghezza: 32 bits
+             orologio: 33MHz
+             configurazione: driver=intel-spi latency=0
+             risorse: irq:0 memoria:74400000-74400fff
+     *-generic NON RECLAMATO
+          descrizione: System peripheral
+          prodotto: Intel Corporation
+          fornitore: Intel Corporation
+          id fisico: 6
+          versione: 00
+          larghezza: 32 bits
+          orologio: 33MHz
+          configurazione: latency=0
+     *-pci:1
+          descrizione: PCI bridge
+          prodotto: Intel Corporation
+          fornitore: Intel Corporation
+          id fisico: 6.2
+          versione: 00
+          larghezza: 32 bits
+          orologio: 33MHz
+          capacità: pci pciexpress msi pm normal_decode bus_master cap_list
+          configurazione: driver=pcieport
+          risorse: irq:181 memoria:76000000-760fffff
+        *-nvme
+             descrizione: Non-Volatile memory controller
+             prodotto: NVMe SSD Controller PM9A1/PM9A3/980PRO
+             fornitore: Samsung Electronics Co Ltd
+             id fisico: 0
+             versione: 00
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: nvme pm msi pciexpress msix nvm_express bus_master cap_list
+             configurazione: driver=nvme latency=0
+             risorse: irq:-2147483648 memoria:76000000-76003fff
+  *-power NON RECLAMATO
+       descrizione: To Be Filled By O.E.M.
+       prodotto: To Be Filled By O.E.M.
+       fornitore: To Be Filled By O.E.M.
+       id fisico: 1
+       versione: To Be Filled By O.E.M.
+       seriale: To Be Filled By O.E.M.
+       capacità: 32768mWh
+  *-nvme0
+       descrizione: NVMe device
+       prodotto: SAMSUNG MZVL21T0HCLR-00B00
+       id fisico: 2
+       nome logico: /dev/nvme0
+       versione: GXA7601Q
+       seriale: S676NFMW609334
+       configurazione: nqn=nqn.1994-11.com.samsung:nvme:PM9A1:M.2:S676NFMW609334 state=live
+     *-namespace:0
+          descrizione: NVMe disk
+          id fisico: 0
+          nome logico: hwmon3
+     *-namespace:1
+          descrizione: NVMe disk
+          id fisico: 2
+          nome logico: /dev/ng0n1
+     *-namespace:2
+          descrizione: NVMe disk
+          id fisico: 1
+          bus info: nvme@0:1
+          nome logico: /dev/nvme0n1
+          dimensione: 953GiB (1024GB)
+          capacità: gpt-1.00 partitioned partitioned:gpt
+          configurazione: guid=caea2870-1d52-4935-9ff9-e3d13f628871 logicalsectorsize=512 sectorsize=512 wwid=eui.002538b630ba265e
+        *-volume:0
+             descrizione: Windows FAT volume
+             fornitore: mkfs.fat
+             id fisico: 1
+             bus info: nvme@0:1,1
+             nome logico: /dev/nvme0n1p1
+             nome logico: /boot/efi
+             versione: FAT32
+             seriale: 0665-4c8e
+             dimensione: 1019MiB
+             capacità: 1021MiB
+             capacità: boot fat initialized
+             configurazione: FATs=2 filesystem=fat mount.fstype=vfat mount.options=rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro state=mounted
+        *-volume:1
+             descrizione: Windows FAT volume
+             fornitore: mkfs.fat
+             id fisico: 2
+             bus info: nvme@0:1,2
+             nome logico: /dev/nvme0n1p2
+             nome logico: /recovery
+             versione: FAT32
+             seriale: 0665-4c5e
+             dimensione: 4095MiB
+             capacità: 4095MiB
+             capacità: fat initialized
+             configurazione: FATs=2 filesystem=fat mount.fstype=vfat mount.options=rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro name=recovery state=mounted
+        *-volume:2
+             descrizione: EXT4 volume
+             fornitore: Linux
+             id fisico: 3
+             bus info: nvme@0:1,3
+             nome logico: /dev/nvme0n1p3
+             nome logico: /
+             versione: 1.0
+             seriale: 340a3428-a072-47d0-9aaf-2e44d9a50cbb
+             dimensione: 944GiB
+             capacità: 944GiB
+             capacità: journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
+             configurazione: created=2024-03-09 15:21:26 filesystem=ext4 lastmountpoint=/ modified=2024-04-20 16:42:27 mount.fstype=ext4 mount.options=rw,noatime,errors=remount-ro mounted=2024-04-20 11:08:38 state=mounted
+        *-volume:3
+             descrizione: Linux swap volume
+             fornitore: Linux
+             id fisico: 4
+             bus info: nvme@0:1,4
+             nome logico: /dev/nvme0n1p4
+             versione: 1
+             seriale: f598518e-f409-4814-8d81-1a3813a4c76a
+             dimensione: 4095MiB
+             capacità: 4095MiB
+             capacità: nofs swap initialized
+             configurazione: filesystem=swap pagesize=4096
+  *-input:0
+       prodotto: Lid Switch
+       id fisico: 3
+       nome logico: input0
+       nome logico: /dev/input/event0
+       capacità: platform
+  *-input:1
+       prodotto: Sleep Button
+       id fisico: 4
+       nome logico: input1
+       nome logico: /dev/input/event1
+       capacità: platform
+  *-input:2
+       prodotto: Video Bus
+       id fisico: 5
+       nome logico: input12
+       nome logico: /dev/input/event9
+       capacità: platform
+  *-input:3
+       prodotto: Video Bus
+       id fisico: 6
+       nome logico: input17
+       nome logico: /dev/input/event12
+       capacità: platform
+  *-input:4
+       prodotto: Intel HID events
+       id fisico: 7
+       nome logico: input19
+       nome logico: /dev/input/event16
+       capacità: platform
+  *-input:5
+       prodotto: Power Button
+       id fisico: 8
+       nome logico: input2
+       nome logico: /dev/input/event2
+       capacità: platform
+  *-input:6
+       prodotto: Intel HID 5 button array
+       id fisico: 9
+       nome logico: input20
+       nome logico: /dev/input/event17
+       capacità: platform
+  *-input:7
+       prodotto: MSI WMI hotkeys
+       id fisico: a
+       nome logico: input21
+       nome logico: /dev/input/event18
+       capacità: platform
+  *-input:8
+       prodotto: gpio-keys
+       id fisico: b
+       nome logico: input22
+       nome logico: /dev/input/event4
+       capacità: platform
+  *-input:9
+       prodotto: ELAN0304:00 04F3:3208 Mouse
+       id fisico: c
+       nome logico: input23
+       nome logico: /dev/input/event5
+       nome logico: /dev/input/mouse0
+       capacità: i2c
+  *-input:10
+       prodotto: ELAN0304:00 04F3:3208 Touchpad
+       id fisico: d
+       nome logico: input25
+       nome logico: /dev/input/event19
+       nome logico: /dev/input/mouse1
+       capacità: i2c
+  *-input:11
+       prodotto: AT Translated Set 2 keyboard
+       id fisico: e
+       nome logico: input3
+       nome logico: /dev/input/event3
+       nome logico: input3::capslock
+       nome logico: input3::numlock
+       nome logico: input3::scrolllock
+       capacità: i8042
+  *-input:12
+       prodotto: sof-hda-dsp Mic
+       id fisico: f
+       nome logico: input31
+       nome logico: /dev/input/event24
+  *-input:13
+       prodotto: sof-hda-dsp Headphone
+       id fisico: 10
+       nome logico: input32
+       nome logico: /dev/input/event25
+  *-input:14
+       prodotto: sof-hda-dsp HDMI/DP,pcm=3
+       id fisico: 11
+       nome logico: input33
+       nome logico: /dev/input/event26
+  *-input:15
+       prodotto: sof-hda-dsp HDMI/DP,pcm=4
+       id fisico: 12
+       nome logico: input34
+       nome logico: /dev/input/event27
+  *-input:16
+       prodotto: sof-hda-dsp HDMI/DP,pcm=5
+       id fisico: 13
+       nome logico: input35
+       nome logico: /dev/input/event28
+  *-input:17
+       prodotto: Logitech MX Master 3S
+       id fisico: 14
+       nome logico: input40
+       nome logico: /dev/input/event8
+       nome logico: /dev/input/mouse3
+       capacità: bluetooth
+  *-input:18
+       prodotto: ETPS/2 Elantech Touchpad
+       id fisico: 15
+       nome logico: input6
+       nome logico: /dev/input/event6
+       nome logico: /dev/input/mouse2
+       capacità: i8042

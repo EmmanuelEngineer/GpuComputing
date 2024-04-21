@@ -80,42 +80,21 @@ int main(int argc, char **argv)
     }
 
     clock_t t;
-    int block = BLOCK;
+
     int s_k, s_z,e_k,e_z;
-    if (block==0)
-    {
+
         fprintf(stdout, "starting to elaborate\n");
         t = clock();
         for (int i = 0; i < array_dim; i++)
         {
             for (int j = 0; j < array_dim; j++)
             {
-                // accumulo
                 for (int h = 0; h < array_dim; h++)
                     *(*(B + h) + i) = *(*(A + i) + h);
             }
         }
         t = clock() - t;
-    }
-    else
-    {
-        fprintf(stdout, "starting to elaborate\n");
-         t = clock();
-        for (int i = 0; i < array_dim; i++)
-        {
-            for (int j = 0; j < array_dim; j++)
-            {
-                s_k = i * block;
-                s_z = j * block;
-                e_k = (i+1) * block;
-                e_z = (j+1) * block;
-                // accumulo
-                for (int h = 0; h < array_dim; h++)
-                    *(*(B + h) + i)= *(*(A + i) + h);
-            }
-        }
-         t = clock() - t;
-    }
+  
     double time_taken = ((double)t) / CLOCKS_PER_SEC;
 
     fprintf(stdout, "Your calculations took %lf seconds to run.\n", time_taken);

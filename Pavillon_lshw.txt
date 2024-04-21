@@ -1,0 +1,628 @@
+emmavicos-pop-os
+    descrizione: Convertible
+    prodotto: HP Pavilion x360 Convertible 14-ba0xx (3FW55EA#ABZ)
+    fornitore: HP
+    versione: Type1ProductConfigId
+    seriale: 8CG7523KFK
+    larghezza: 64 bits
+    capacità: smbios-3.0.0 dmi-3.0.0 smp vsyscall32
+    configurazione: administrator_password=disabled boot=normal chassis=convertible family=103C_5335KV HP Pavilion sku=3FW55EA#ABZ uuid=daefaa36-ec0c-11e7-9311-a08869e3b17d
+  *-core
+       descrizione: Scheda madre
+       prodotto: 830F
+       fornitore: HP
+       id fisico: 0
+       versione: 31.25
+       seriale: PGNAB1AK9A9491
+       slot: Type2 - Board Chassis Location
+     *-firmware
+          descrizione: BIOS
+          fornitore: Insyde
+          id fisico: 0
+          versione: F.58
+          date: 04/06/2022
+          dimensione: 128KiB
+          capacità: 6MiB
+          capacità: pci upgrade shadowing cdboot bootselect edd int13floppynec int13floppytoshiba int13floppy360 int13floppy1200 int13floppy720 int13floppy2880 int9keyboard int10video acpi usb biosbootspecification uefi
+     *-cpu
+          descrizione: CPU
+          prodotto: Intel(R) Core(TM) i3-7100U CPU @ 2.40GHz
+          fornitore: Intel Corp.
+          id fisico: 4
+          bus info: cpu@0
+          versione: 6.142.9
+          seriale: To Be Filled By O.E.M.
+          slot: U3E1
+          dimensione: 2399MHz
+          capacità: 4005MHz
+          larghezza: 64 bits
+          orologio: 100MHz
+          capacità: lm fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp x86-64 constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust sgx bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities cpufreq
+          configurazione: cores=2 enabledcores=2 microcode=244 threads=4
+        *-cache:0
+             descrizione: L1 cache
+             id fisico: 5
+             slot: L1 Cache
+             dimensione: 128KiB
+             capacità: 128KiB
+             capacità: synchronous internal write-back unified
+             configurazione: level=1
+        *-cache:1
+             descrizione: L2 cache
+             id fisico: 6
+             slot: L2 Cache
+             dimensione: 512KiB
+             capacità: 512KiB
+             capacità: synchronous internal write-back unified
+             configurazione: level=2
+        *-cache:2
+             descrizione: L3 cache
+             id fisico: 7
+             slot: L3 Cache
+             dimensione: 3MiB
+             capacità: 3MiB
+             capacità: synchronous internal write-back unified
+             configurazione: level=3
+     *-memory
+          descrizione: Memoria di sistema
+          id fisico: 26
+          slot: Scheda di sistema o scheda madre
+          dimensione: 8GiB
+        *-bank:0
+             descrizione: SODIMM DDR4 Sincrono Unbuffered (Unregistered) 2133 MHz (0,5 ns)
+             prodotto: HMA81GS6AFR8N-UH
+             fornitore: SK Hynix
+             id fisico: 0
+             seriale: 92368522
+             slot: Bottom - Slot 1 (left)
+             dimensione: 8GiB
+             larghezza: 64 bits
+             orologio: 2133MHz (0.5ns)
+        *-bank:1
+             descrizione: SODIMM DDR Sincrono [vuoto]
+             id fisico: 1
+             slot: Bottom - Slot 2 (right)
+     *-pci
+          descrizione: Host bridge
+          prodotto: Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Registers
+          fornitore: Intel Corporation
+          id fisico: 100
+          bus info: pci@0000:00:00.0
+          versione: 02
+          larghezza: 32 bits
+          orologio: 33MHz
+          configurazione: driver=skl_uncore
+          risorse: irq:0
+        *-display
+             descrizione: VGA compatible controller
+             prodotto: HD Graphics 620
+             fornitore: Intel Corporation
+             id fisico: 2
+             bus info: pci@0000:00:02.0
+             nome logico: /dev/fb0
+             versione: 02
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pciexpress msi pm vga_controller bus_master cap_list rom fb
+             configurazione: depth=32 driver=i915 latency=0 resolution=1920,1080
+             risorse: irq:134 memoria:a0000000-a0ffffff memoria:90000000-9fffffff ioport:3000(dimensione=64) memoria:c0000-dffff
+        *-generic:0
+             descrizione: Signal processing controller
+             prodotto: Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem
+             fornitore: Intel Corporation
+             id fisico: 4
+             bus info: pci@0000:00:04.0
+             versione: 02
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: msi pm bus_master cap_list
+             configurazione: driver=proc_thermal latency=0
+             risorse: irq:16 memoria:a1320000-a1327fff
+        *-generic:1
+             descrizione: Non-VGA unclassified device
+             prodotto: Sunrise Point-LP Integrated Sensor Hub
+             fornitore: Intel Corporation
+             id fisico: 13
+             bus info: pci@0000:00:13.0
+             versione: 21
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pm bus_master cap_list
+             configurazione: driver=intel_ish_ipc latency=0
+             risorse: irq:20 memoria:a1332000-a1332fff
+        *-usb
+             descrizione: USB controller
+             prodotto: Sunrise Point-LP USB 3.0 xHCI Controller
+             fornitore: Intel Corporation
+             id fisico: 14
+             bus info: pci@0000:00:14.0
+             versione: 21
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pm msi xhci bus_master cap_list
+             configurazione: driver=xhci_hcd latency=0
+             risorse: irq:125 memoria:a1300000-a130ffff
+           *-usbhost:0
+                prodotto: xHCI Host Controller
+                fornitore: Linux 6.6.10-76060610-generic xhci-hcd
+                id fisico: 0
+                bus info: usb@1
+                nome logico: usb1
+                versione: 6.06
+                capacità: usb-2.00
+                configurazione: driver=hub slots=12 speed=480Mbit/s
+              *-usb:0
+                   descrizione: Video
+                   prodotto: HP Wide Vision HD Camera
+                   fornitore: Chicony
+                   id fisico: 4
+                   bus info: usb@1:4
+                   versione: 32.22
+                   capacità: usb-2.00
+                   configurazione: driver=uvcvideo maxpower=500mA speed=480Mbit/s
+              *-usb:1
+                   descrizione: Interfaccia wireless Bluetooth
+                   prodotto: Wireless-AC 3168 Bluetooth
+                   fornitore: Intel Corp.
+                   id fisico: 5
+                   bus info: usb@1:5
+                   versione: 0.01
+                   capacità: bluetooth usb-2.00
+                   configurazione: driver=btusb maxpower=100mA speed=12Mbit/s
+           *-usbhost:1
+                prodotto: xHCI Host Controller
+                fornitore: Linux 6.6.10-76060610-generic xhci-hcd
+                id fisico: 1
+                bus info: usb@2
+                nome logico: usb2
+                versione: 6.06
+                capacità: usb-3.00
+                configurazione: driver=hub slots=6 speed=5000Mbit/s
+        *-generic:2
+             descrizione: Signal processing controller
+             prodotto: Sunrise Point-LP Thermal subsystem
+             fornitore: Intel Corporation
+             id fisico: 14.2
+             bus info: pci@0000:00:14.2
+             versione: 21
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pm msi bus_master cap_list
+             configurazione: driver=intel_pch_thermal latency=0
+             risorse: irq:18 memoria:a1333000-a1333fff
+        *-generic:3
+             descrizione: Signal processing controller
+             prodotto: Sunrise Point-LP Serial IO I2C Controller #0
+             fornitore: Intel Corporation
+             id fisico: 15
+             bus info: pci@0000:00:15.0
+             versione: 21
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pm bus_master cap_list
+             configurazione: driver=intel-lpss latency=0
+             risorse: irq:16 memoria:a1334000-a1334fff
+        *-generic:4
+             descrizione: Signal processing controller
+             prodotto: Sunrise Point-LP Serial IO I2C Controller #1
+             fornitore: Intel Corporation
+             id fisico: 15.1
+             bus info: pci@0000:00:15.1
+             versione: 21
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pm bus_master cap_list
+             configurazione: driver=intel-lpss latency=0
+             risorse: irq:17 memoria:a1335000-a1335fff
+        *-communication
+             descrizione: Communication controller
+             prodotto: Sunrise Point-LP CSME HECI #1
+             fornitore: Intel Corporation
+             id fisico: 16
+             bus info: pci@0000:00:16.0
+             versione: 21
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pm msi bus_master cap_list
+             configurazione: driver=mei_me latency=0
+             risorse: irq:135 memoria:a1336000-a1336fff
+        *-sata
+             descrizione: SATA controller
+             prodotto: Sunrise Point-LP SATA Controller [AHCI mode]
+             fornitore: Intel Corporation
+             id fisico: 17
+             bus info: pci@0000:00:17.0
+             versione: 21
+             larghezza: 32 bits
+             orologio: 66MHz
+             capacità: sata msi pm ahci_1.0 bus_master cap_list
+             configurazione: driver=ahci latency=0
+             risorse: irq:126 memoria:a1330000-a1331fff memoria:a1339000-a13390ff ioport:3080(dimensione=8) ioport:3088(dimensione=4) ioport:3060(dimensione=32) memoria:a1337000-a13377ff
+        *-pci:0
+             descrizione: PCI bridge
+             prodotto: Sunrise Point-LP PCI Express Root Port #5
+             fornitore: Intel Corporation
+             id fisico: 1c
+             bus info: pci@0000:00:1c.0
+             versione: f1
+             larghezza: 32 bits
+             orologio: 33MHz
+             capacità: pci pciexpress msi pm normal_decode bus_master cap_list
+             configurazione: driver=pcieport
+             risorse: irq:122 memoria:a1200000-a12fffff
+           *-nvme
+                descrizione: NVMe device
+                prodotto: CT1000P3SSD8
+                fornitore: Micron/Crucial Technology
+                id fisico: 0
+                bus info: pci@0000:01:00.0
+                nome logico: /dev/nvme0
+                versione: P9CR30A
+                seriale: 2245E6841A04
+                larghezza: 64 bits
+                orologio: 33MHz
+                capacità: nvme pciexpress msix msi pm nvm_express bus_master cap_list
+                configurazione: driver=nvme latency=0 nqn=nqn.2014.08.org.nvmexpress:c0a9c0a92245E6841A04        CT1000P3SSD8 state=live
+                risorse: irq:16 memoria:a1200000-a1203fff
+              *-namespace:0
+                   descrizione: NVMe disk
+                   id fisico: 0
+                   nome logico: hwmon3
+              *-namespace:1
+                   descrizione: NVMe disk
+                   id fisico: 2
+                   nome logico: /dev/ng0n1
+              *-namespace:2
+                   descrizione: NVMe disk
+                   id fisico: 1
+                   bus info: nvme@0:1
+                   nome logico: /dev/nvme0n1
+                   dimensione: 931GiB (1TB)
+                   capacità: gpt-1.00 partitioned partitioned:gpt
+                   configurazione: guid=9a278cd4-7eeb-4565-9a1a-3d0a2e1a06fc logicalsectorsize=512 sectorsize=512 wwid=nvme.c0a9-323234354536383431413034-435431303030503353534438-00000001
+                 *-volume:0
+                      descrizione: Windows FAT volume
+                      fornitore: MSWIN4.1
+                      id fisico: 1
+                      bus info: nvme@0:1,1
+                      nome logico: /dev/nvme0n1p1
+                      nome logico: /boot/efi
+                      versione: FAT32
+                      seriale: ad98-e265
+                      dimensione: 495MiB
+                      capacità: 497MiB
+                      capacità: boot fat initialized
+                      configurazione: FATs=2 filesystem=fat mount.fstype=vfat mount.options=rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro state=mounted
+                 *-volume:1
+                      descrizione: reserved partition
+                      fornitore: Windows
+                      id fisico: 2
+                      bus info: nvme@0:1,2
+                      nome logico: /dev/nvme0n1p2
+                      seriale: 3345961d-57d9-4a48-9294-4cc814c4d6a4
+                      capacità: 15MiB
+                      capacità: nofs nomount
+                      configurazione: name=Microsoft reserved partition
+                 *-volume:2
+                      descrizione: EXT4 volume
+                      fornitore: Linux
+                      id fisico: 3
+                      bus info: nvme@0:1,3
+                      nome logico: /dev/nvme0n1p3
+                      nome logico: /
+                      versione: 1.0
+                      seriale: 21af7256-4198-402d-a2ca-60d62b431500
+                      dimensione: 470GiB
+                      capacità: journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
+                      configurazione: created=2022-08-30 17:20:57 filesystem=ext4 lastmountpoint=/ modified=2024-04-20 15:13:06 mount.fstype=ext4 mount.options=rw,noatime,errors=remount-ro mounted=2024-04-20 15:13:09 state=mounted
+                 *-volume:3
+                      descrizione: Windows NTFS volume
+                      fornitore: Windows
+                      id fisico: 4
+                      bus info: nvme@0:1,4
+                      nome logico: /dev/nvme0n1p4
+                      nome logico: /mnt/pollo
+                      versione: 3.1
+                      seriale: 4a1d5a7f-cd8f-b347-b5fd-b93ecd039284
+                      dimensione: 456GiB
+                      capacità: 456GiB
+                      capacità: ntfs initialized
+                      configurazione: clustersize=4096 created=2019-12-07 07:55:47 filesystem=ntfs mount.fstype=fuseblk mount.options=rw,relatime,user_id=0,group_id=0,allow_other,blksize=4096 name=Basic data partition state=mounted
+        *-pci:1
+             descrizione: PCI bridge
+             prodotto: Sunrise Point-LP PCI Express Root Port #9
+             fornitore: Intel Corporation
+             id fisico: 1d
+             bus info: pci@0000:00:1d.0
+             versione: f1
+             larghezza: 32 bits
+             orologio: 33MHz
+             capacità: pci pciexpress msi pm normal_decode bus_master cap_list
+             configurazione: driver=pcieport
+             risorse: irq:123 memoria:a1100000-a11fffff
+           *-generic
+                descrizione: MMC Host
+                prodotto: RTS522A PCI Express Card Reader
+                fornitore: Realtek Semiconductor Co., Ltd.
+                id fisico: 0
+                bus info: pci@0000:02:00.0
+                nome logico: mmc0
+                versione: 01
+                larghezza: 32 bits
+                orologio: 33MHz
+                capacità: pm msi pciexpress bus_master cap_list
+                configurazione: driver=rtsx_pci latency=0
+                risorse: irq:127 memoria:a1100000-a1100fff
+        *-pci:2
+             descrizione: PCI bridge
+             prodotto: Sunrise Point-LP PCI Express Root Port #10
+             fornitore: Intel Corporation
+             id fisico: 1d.1
+             bus info: pci@0000:00:1d.1
+             versione: f1
+             larghezza: 32 bits
+             orologio: 33MHz
+             capacità: pci pciexpress msi pm normal_decode bus_master cap_list
+             configurazione: driver=pcieport
+             risorse: irq:124 memoria:a1000000-a10fffff
+           *-network
+                descrizione: Interfaccia Wireless
+                prodotto: Dual Band Wireless-AC 3168NGW [Stone Peak]
+                fornitore: Intel Corporation
+                id fisico: 0
+                bus info: pci@0000:03:00.0
+                nome logico: wlp3s0
+                versione: 10
+                seriale: a0:88:69:e3:b1:79
+                larghezza: 64 bits
+                orologio: 33MHz
+                capacità: pm msi pciexpress bus_master cap_list ethernet physical wireless
+                configurazione: broadcast=yes driver=iwlwifi driverversion=6.6.10-76060610-generic firmware=29.198743027.0 3168-29.ucode ip=192.168.162.158 latency=0 link=yes multicast=yes wireless=IEEE 802.11
+                risorse: irq:146 memoria:a1000000-a1001fff
+        *-isa
+             descrizione: ISA bridge
+             prodotto: Sunrise Point LPC Controller/eSPI Controller
+             fornitore: Intel Corporation
+             id fisico: 1f
+             bus info: pci@0000:00:1f.0
+             versione: 21
+             larghezza: 32 bits
+             orologio: 33MHz
+             capacità: isa bus_master
+             configurazione: latency=0
+           *-pnp00:00
+                prodotto: PnP device PNP0c02
+                id fisico: 0
+                capacità: pnp
+                configurazione: driver=system
+           *-pnp00:01
+                prodotto: PnP device PNP0c02
+                id fisico: 1
+                capacità: pnp
+                configurazione: driver=system
+           *-pnp00:02
+                prodotto: PnP device PNP0c02
+                id fisico: 2
+                capacità: pnp
+                configurazione: driver=system
+           *-pnp00:03
+                prodotto: PnP device PNP0b00
+                id fisico: 3
+                capacità: pnp
+                configurazione: driver=rtc_cmos
+           *-pnp00:04
+                prodotto: PnP device INT3f0d
+                fornitore: Interphase Corporation
+                id fisico: 4
+                capacità: pnp
+                configurazione: driver=system
+           *-pnp00:05
+                prodotto: PnP device HPQ8001
+                fornitore: Hewlett-Packard Co.
+                id fisico: 5
+                capacità: pnp
+                configurazione: driver=i8042 kbd
+           *-pnp00:06
+                prodotto: PnP device ETD071b
+                fornitore: ELAN MICROELECTRONICS CORPORATION
+                id fisico: 6
+                capacità: pnp
+                configurazione: driver=i8042 aux
+           *-pnp00:07
+                prodotto: PnP device PNP0c02
+                id fisico: 7
+                capacità: pnp
+                configurazione: driver=system
+           *-pnp00:08
+                prodotto: PnP device PNP0c02
+                id fisico: 8
+                capacità: pnp
+                configurazione: driver=system
+           *-input:0
+                prodotto: Intel Virtual Buttons
+                id fisico: 9
+                nome logico: input13
+                nome logico: /dev/input/event11
+                capacità: platform
+           *-input:1
+                prodotto: Intel Virtual Switches
+                id fisico: a
+                nome logico: input14
+                nome logico: /dev/input/event12
+                capacità: platform
+        *-memory NON RECLAMATO
+             descrizione: Memory controller
+             prodotto: Sunrise Point-LP PMC
+             fornitore: Intel Corporation
+             id fisico: 1f.2
+             bus info: pci@0000:00:1f.2
+             versione: 21
+             larghezza: 32 bits
+             orologio: 33MHz (30.3ns)
+             capacità: bus_master
+             configurazione: latency=0
+             risorse: memoria:a132c000-a132ffff
+        *-multimedia
+             descrizione: Audio device
+             prodotto: Sunrise Point-LP HD Audio
+             fornitore: Intel Corporation
+             id fisico: 1f.3
+             bus info: pci@0000:00:1f.3
+             nome logico: card0
+             nome logico: /dev/snd/controlC0
+             nome logico: /dev/snd/hwC0D0
+             nome logico: /dev/snd/hwC0D2
+             nome logico: /dev/snd/pcmC0D0c
+             nome logico: /dev/snd/pcmC0D0p
+             nome logico: /dev/snd/pcmC0D3p
+             nome logico: /dev/snd/pcmC0D7p
+             nome logico: /dev/snd/pcmC0D8p
+             versione: 21
+             larghezza: 64 bits
+             orologio: 33MHz
+             capacità: pm msi bus_master cap_list
+             configurazione: driver=snd_hda_intel latency=32
+             risorse: irq:147 memoria:a1328000-a132bfff memoria:a1310000-a131ffff
+           *-input:0
+                prodotto: HDA Intel PCH Mic
+                id fisico: 0
+                nome logico: input23
+                nome logico: /dev/input/event16
+           *-input:1
+                prodotto: HDA Intel PCH Headphone
+                id fisico: 1
+                nome logico: input24
+                nome logico: /dev/input/event17
+           *-input:2
+                prodotto: HDA Intel PCH HDMI/DP,pcm=3
+                id fisico: 2
+                nome logico: input25
+                nome logico: /dev/input/event18
+           *-input:3
+                prodotto: HDA Intel PCH HDMI/DP,pcm=7
+                id fisico: 3
+                nome logico: input26
+                nome logico: /dev/input/event19
+           *-input:4
+                prodotto: HDA Intel PCH HDMI/DP,pcm=8
+                id fisico: 4
+                nome logico: input27
+                nome logico: /dev/input/event20
+        *-serial
+             descrizione: SMBus
+             prodotto: Sunrise Point-LP SMBus
+             fornitore: Intel Corporation
+             id fisico: 1f.4
+             bus info: pci@0000:00:1f.4
+             versione: 21
+             larghezza: 64 bits
+             orologio: 33MHz
+             configurazione: driver=i801_smbus latency=0
+             risorse: irq:16 memoria:a1338000-a13380ff ioport:3040(dimensione=32)
+  *-battery
+       prodotto: BK03041XL
+       fornitore: 333-54-5D-A
+       id fisico: 1
+       versione: ManufDate
+       seriale: DummySerialNumber
+       slot: Primary
+       capacità: 41753mWh
+       configurazione: voltage=11,6V
+  *-power NON RECLAMATO
+       descrizione: OEM Define 1
+       prodotto: OEM Define 5
+       fornitore: OEM Define 2
+       id fisico: 2
+       versione: OEM Define 6
+       seriale: OEM Define 3
+       capacità: 75mWh
+  *-input:0
+       prodotto: Lid Switch
+       id fisico: 3
+       nome logico: input0
+       nome logico: /dev/input/event0
+       capacità: platform
+  *-input:1
+       prodotto: Power Button
+       id fisico: 4
+       nome logico: input1
+       nome logico: /dev/input/event1
+       capacità: platform
+  *-input:2
+       prodotto: Video Bus
+       id fisico: 5
+       nome logico: input11
+       nome logico: /dev/input/event9
+       capacità: platform
+  *-input:3
+       prodotto: Wireless hotkeys
+       id fisico: 6
+       nome logico: input12
+       nome logico: /dev/input/event10
+       capacità: platform
+  *-input:4
+       prodotto: Intel Virtual Buttons
+       id fisico: 7
+       nome logico: input15
+       nome logico: /dev/input/event13
+       capacità: platform
+  *-input:5
+       prodotto: Intel Virtual Switches
+       id fisico: 8
+       nome logico: input16
+       nome logico: /dev/input/event14
+       capacità: platform
+  *-input:6
+       prodotto: ELAN0732:00 04F3:251C
+       id fisico: 9
+       nome logico: input17
+       nome logico: /dev/input/event4
+       nome logico: /dev/input/mouse0
+       capacità: i2c
+  *-input:7
+       prodotto: ELAN0732:00 04F3:251C UNKNOWN
+       id fisico: a
+       nome logico: input18
+       nome logico: /dev/input/event5
+       capacità: i2c
+  *-input:8
+       prodotto: ELAN0732:00 04F3:251C UNKNOWN
+       id fisico: b
+       nome logico: input19
+       nome logico: /dev/input/event6
+       capacità: i2c
+  *-input:9
+       prodotto: Power Button
+       id fisico: c
+       nome logico: input2
+       nome logico: /dev/input/event2
+       capacità: platform
+  *-input:10
+       prodotto: ELAN0732:00 04F3:251C Stylus
+       id fisico: d
+       nome logico: input20
+       nome logico: /dev/input/event7
+       nome logico: /dev/input/mouse1
+       capacità: i2c
+  *-input:11
+       prodotto: HP WMI hotkeys
+       id fisico: e
+       nome logico: input22
+       nome logico: /dev/input/event15
+       capacità: platform
+  *-input:12
+       prodotto: AT Translated Set 2 keyboard
+       id fisico: f
+       nome logico: input3
+       nome logico: /dev/input/event3
+       nome logico: input3::capslock
+       nome logico: input3::numlock
+       nome logico: input3::scrolllock
+       capacità: i8042
+  *-input:13
+       prodotto: ETPS/2 Elantech Touchpad
+       id fisico: 10
+       nome logico: input5
+       nome logico: /dev/input/event8
+       nome logico: /dev/input/mouse2
+       capacità: i8042
