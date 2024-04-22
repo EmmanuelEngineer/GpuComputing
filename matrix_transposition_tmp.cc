@@ -30,6 +30,9 @@ typedef double dtype;
 #include <time.h>
 #include <stdlib.h>
 #include <math.h>
+#include <chrono>
+#include <iostream>
+
 
 void printMatrix(dtype **array, char *name, long double array_row, long double array_column)
 {
@@ -48,6 +51,27 @@ void printMatrix(dtype **array, char *name, long double array_row, long double a
     fprintf(stdout, "\n");
 }
 
+class Timer
+{
+public:
+    Timer( )// Initialize shape in the constructor initializer list
+    {
+        start = std::chrono::high_resolution_clock::now();
+    }
+
+    ~Timer()
+    {
+        end = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double, std::milli> ms_double = end - start;
+        std::cout << ms_double.count() << std::endl;
+    }
+
+private:
+    
+    std::chrono::high_resolution_clock::time_point start;
+    std::chrono::high_resolution_clock::time_point end;
+}; 
+
 // Sommare accumulando per singolo elemento e poi a blocchi
 int main(int argc, char **argv)
 {
@@ -59,60 +83,46 @@ int main(int argc, char **argv)
     int data_dim = sizeof(DTYPE);
 
     fprintf(stdout, "dimension of matrices pow 2 at %d, %Lf total with type " DTYPE_str "\n", power, array_dim);
-    A = malloc(array_dim * sizeof(void *));
-    B = malloc(array_dim * sizeof(void *));
+    A = (dtype**) malloc(array_dim * sizeof(dtype *));
+    B =  (dtype**) malloc(array_dim * sizeof(dtype *));
 
     for (int x = 0; x < array_dim; x++)
     {
-        A[x] = malloc(array_dim * data_dim);
-        B[x] = malloc(array_dim * data_dim);
+        A[x] = (dtype*)malloc(array_dim * data_dim);
+        B[x] = (dtype*)malloc(array_dim * data_dim);
     }
 
     for (int i = 0; i < array_dim; i++)
     {
-        
+        for (int j = 0; j < array_dim; j++)
+        {
             for (int h = 0; h < array_dim; h++)
             {
                 (*(*(A + i) + h)) = rand() % 100;
             }
-        
+        }
     }
 
     clock_t t;
-    int block = BLOCK;
+
     int s_k, s_z,e_k,e_z;
-    if (block==0)
-    {
-        fprintf(stdout, "starting to elaborate linear\n");
-        t = clock();
+
+        fprintf(stdout, "starting to elaborate\n");
+        //t = clock();
+        {Timer time;
         for (int i = 0; i < array_dim; i++)
         {
+
                 for (int h = 0; h < array_dim; h++)
                     *(*(B + h) + i) = *(*(A + i) + h);
-            
-        }
-        t = clock() - t;
-        }
-    else
-    {
-        fprintf(stdout, "starting to elaborate blocks %d\n",block);
-        t = clock();
-        for (int i = 0; i < array_dim; i+=block){
-            for (int h = 0; h < array_dim; h+=block){
-                e_k = (i+1) + block;
-                e_z = (h+1) + block;
-                for (int k = i; k < e_k && k<array_dim; k++){
-                        for (int z = h; z < e_z && z <array_dim; z++)
-                            *(*(B + z) + k) = *(*(A + k) + z);
-                    }
             }
-        }
-        t = clock() - t;
-    }
 
+}
+        //t = clock() - t;
+  
     double time_taken = ((double)t) / CLOCKS_PER_SEC;
 
-    fprintf(stdout, "Your calculations took %lf seconds to run.\n", time_taken);
+    //fprintf(stdout, "Your calculations took %lf seconds to run.\n", time_taken);
     //printMatrix(A, "A", array_dim, array_dim);
     //printMatrix(B, "B", array_dim, array_dim);
 

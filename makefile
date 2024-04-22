@@ -26,7 +26,7 @@ OBJECTS=$(BUILDDIR)/my_library.o
 
 $(TARGETDIR)/runnable_${DTYPE}: ${MAIN} $(OBJECTS)
 	@mkdir -p $(@D)
-	$(CC) $^ -o $@ $(INCLUDE) $(LIBS) $(OPT)$(OPT_NUM) -D DTYPE_code=$(DTYPE)
+	$(CC) $^ -o $@ $(INCLUDE) $(LIBS) $(OPT)$(OPT_NUM) -D DTYPE_code=$(DTYPE) -D BLOCK=$(BLOCK)
 	
 $(BUILDDIR)/my_library.o: src/my_library.c
 	mkdir -p $(BUILDDIR) $(TARGETDIR)
