@@ -70,12 +70,10 @@ int main(int argc, char **argv)
 
     for (int i = 0; i < array_dim; i++)
     {
-        
-            for (int h = 0; h < array_dim; h++)
-            {
-                (*(*(A + i) + h)) = rand() % 100;
-            }
-        
+        for (int h = 0; h < array_dim; h++)
+        {
+            (*(*(A + i) + h)) = rand() % 100;
+        }
     }
 
     clock_t t;
