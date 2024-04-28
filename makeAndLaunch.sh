@@ -2,12 +2,13 @@
 echo "building active";
 ########################################
 #Set of changeble parameters for the testing
-#Will be always executed a run with a block access pattern  and a run with a linear access pattern 
+#Will be always executed a run with a block access pattern and a run with a linear access pattern and a cachegrind run for both
+#and alway with 3 data types: integers, floats and doubles
 number_of_iterations=3 #number of times a setting is tested
-starting_optimizations=0 # For testing only some of the optimizations(for example if you want to test only -O2 and -O3)
-maximum_power=5 # Maximum n for matrices of 2^n*2^n
+starting_optimizations=0 # For testing only some of the optimizations(for example if you want to test only -O2 and -O3, must be setted to 2)
+maximum_power=5 # Maximum n for matrices 2^n*2^n
 block_dimension=8
-minimum_power=1 # Minimum n for matrices of 2^n*2^n 
+minimum_power=1 # Minimum n for matrices 2^n*2^n 
 #######################################
 mkdir "Homework_runs"
 mkdir "Homework_runs_block"

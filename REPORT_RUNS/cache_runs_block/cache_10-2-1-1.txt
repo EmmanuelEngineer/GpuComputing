@@ -1,0 +1,29 @@
+==92526== Cachegrind, a high-precision tracing profiler
+==92526== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==92526== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==92526== Command: bin/runnable_1 10
+==92526== 
+--92526-- warning: L3 cache found, using its data for the LL simulation.
+==92526== brk segment overflow in thread #1: can't grow to 0x485b000
+==92526== (see section Limitations in user manual)
+==92526== NOTE: further instances of this message will not be shown
+dimension of matrices pow 2 at 10, 1024.000000 total with type FLOAT
+starting to elaborate blocks 8
+Your calculations took 0.045793 seconds to run.
+
+==92526== 
+==92526== I refs:        104,398,838
+==92526== I1  misses:          1,588
+==92526== LLi misses:          1,574
+==92526== I1  miss rate:        0.00%
+==92526== LLi miss rate:        0.00%
+==92526== 
+==92526== D refs:         40,320,497  (27,922,164 rd   + 12,398,333 wr)
+==92526== D1  misses:        361,501  (    95,831 rd   +    265,670 wr)
+==92526== LLd misses:        133,983  (     1,517 rd   +    132,466 wr)
+==92526== D1  miss rate:         0.9% (       0.3%     +        2.1%  )
+==92526== LLd miss rate:         0.3% (       0.0%     +        1.1%  )
+==92526== 
+==92526== LL refs:           363,089  (    97,419 rd   +    265,670 wr)
+==92526== LL misses:         135,557  (     3,091 rd   +    132,466 wr)
+==92526== LL miss rate:          0.1% (       0.0%     +        1.1%  )

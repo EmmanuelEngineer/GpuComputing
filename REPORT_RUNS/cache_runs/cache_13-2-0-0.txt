@@ -1,0 +1,29 @@
+==8020== Cachegrind, a high-precision tracing profiler
+==8020== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==8020== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==8020== Command: bin/runnable_0 13
+==8020== 
+--8020-- warning: L3 cache found, using its data for the LL simulation.
+==8020== brk segment overflow in thread #1: can't grow to 0x4847000
+==8020== (see section Limitations in user manual)
+==8020== NOTE: further instances of this message will not be shown
+dimension of matrices pow 2 at 13, 8192.000000 total with type INT
+starting to elaborate linear
+Your calculations took 4.795156 seconds to run.
+
+==8020== 
+==8020== I refs:        7,784,496,668
+==8020== I1  misses:            1,593
+==8020== LLi misses:            1,591
+==8020== I1  miss rate:          0.00%
+==8020== LLi miss rate:          0.00%
+==8020== 
+==8020== D refs:        3,090,287,086  (2,485,133,448 rd   + 605,153,638 wr)
+==8020== D1  misses:       83,953,875  (   12,618,554 rd   +  71,335,321 wr)
+==8020== LLd misses:       33,145,947  (    4,320,812 rd   +  28,825,135 wr)
+==8020== D1  miss rate:           2.7% (          0.5%     +        11.8%  )
+==8020== LLd miss rate:           1.1% (          0.2%     +         4.8%  )
+==8020== 
+==8020== LL refs:          83,955,468  (   12,620,147 rd   +  71,335,321 wr)
+==8020== LL misses:        33,147,538  (    4,322,403 rd   +  28,825,135 wr)
+==8020== LL miss rate:            0.3% (          0.0%     +         4.8%  )

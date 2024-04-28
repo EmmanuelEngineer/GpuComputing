@@ -1,0 +1,4 @@
+dimension of matrices pow 2 at 7, 128.000000 total with type INT
+starting to elaborate linear
+Your calculations took 0.000014 seconds to run.
+

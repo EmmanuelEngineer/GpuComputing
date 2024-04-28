@@ -1,0 +1,26 @@
+==121175== Cachegrind, a high-precision tracing profiler
+==121175== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==121175== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==121175== Command: bin/runnable_1 3
+==121175== 
+--121175-- warning: L3 cache found, using its data for the LL simulation.
+dimension of matrices pow 2 at 3, 8.000000 total with type FLOAT
+starting to elaborate blocks 8
+Your calculations took 0.001133 seconds to run.
+
+==121175== 
+==121175== I refs:        198,283
+==121175== I1  misses:      1,552
+==121175== LLi misses:      1,516
+==121175== I1  miss rate:    0.78%
+==121175== LLi miss rate:    0.76%
+==121175== 
+==121175== D refs:         64,298  (46,908 rd   + 17,390 wr)
+==121175== D1  misses:      2,472  ( 1,793 rd   +    679 wr)
+==121175== LLd misses:      2,153  ( 1,515 rd   +    638 wr)
+==121175== D1  miss rate:     3.8% (   3.8%     +    3.9%  )
+==121175== LLd miss rate:     3.3% (   3.2%     +    3.7%  )
+==121175== 
+==121175== LL refs:         4,024  ( 3,345 rd   +    679 wr)
+==121175== LL misses:       3,669  ( 3,031 rd   +    638 wr)
+==121175== LL miss rate:      1.4% (   1.2%     +    3.7%  )

@@ -1,0 +1,29 @@
+==14468== Cachegrind, a cache and branch-prediction profiler
+==14468== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==14468== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==14468== Command: bin/runnable_0 10
+==14468== 
+--14468-- warning: L3 cache found, using its data for the LL simulation.
+==14468== brk segment overflow in thread #1: can't grow to 0x485b000
+==14468== (see section Limitations in user manual)
+==14468== NOTE: further instances of this message will not be shown
+dimension of matrices pow 2 at 10, 1024.000000 total with type INT
+starting to elaborate blocks 8
+Your calculations took 0.340103 seconds to run.
+
+==14468== 
+==14468== I   refs:      102,613,712
+==14468== I1  misses:          1,651
+==14468== LLi misses:          1,641
+==14468== I1  miss rate:        0.00%
+==14468== LLi miss rate:        0.00%
+==14468== 
+==14468== D   refs:       40,618,813  (28,072,810 rd   + 12,546,003 wr)
+==14468== D1  misses:        361,510  (    95,836 rd   +    265,674 wr)
+==14468== LLd misses:        203,307  (    69,536 rd   +    133,771 wr)
+==14468== D1  miss rate:         0.9% (       0.3%     +        2.1%  )
+==14468== LLd miss rate:         0.5% (       0.2%     +        1.1%  )
+==14468== 
+==14468== LL refs:           363,161  (    97,487 rd   +    265,674 wr)
+==14468== LL misses:         204,948  (    71,177 rd   +    133,771 wr)
+==14468== LL miss rate:          0.1% (       0.1%     +        1.1%  )

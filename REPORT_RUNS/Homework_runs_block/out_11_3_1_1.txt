@@ -1,0 +1,4 @@
+dimension of matrices pow 2 at 11, 2048.000000 total with type FLOAT
+starting to elaborate blocks 8
+Your calculations took 0.006325 seconds to run.
+

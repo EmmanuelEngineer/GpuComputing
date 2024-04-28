@@ -1,0 +1,26 @@
+==109502== Cachegrind, a high-precision tracing profiler
+==109502== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==109502== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==109502== Command: bin/runnable_1 15
+==109502== 
+--109502-- warning: L3 cache found, using its data for the LL simulation.
+dimension of matrices pow 2 at 15, 32768.000000 total with type FLOAT
+starting to elaborate blocks 8
+Your calculations took 44.037213 seconds to run.
+
+==109502== 
+==109502== I refs:        105,783,858,761
+==109502== I1  misses:              1,570
+==109502== LLi misses:              1,568
+==109502== I1  miss rate:            0.00%
+==109502== LLi miss rate:            0.00%
+==109502== 
+==109502== D refs:         40,425,422,733  (26,798,747,515 rd   + 13,626,675,218 wr)
+==109502== D1  misses:      1,646,586,848  (   245,885,719 rd   +  1,400,701,129 wr)
+==109502== LLd misses:        336,418,957  (    67,880,438 rd   +    268,538,519 wr)
+==109502== D1  miss rate:             4.1% (           0.9%     +           10.3%  )
+==109502== LLd miss rate:             0.8% (           0.3%     +            2.0%  )
+==109502== 
+==109502== LL refs:         1,646,588,418  (   245,887,289 rd   +  1,400,701,129 wr)
+==109502== LL misses:         336,420,525  (    67,882,006 rd   +    268,538,519 wr)
+==109502== LL miss rate:              0.2% (           0.1%     +            2.0%  )
