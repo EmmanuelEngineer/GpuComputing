@@ -1,4 +1,0 @@
-dimension of matrices pow 2 at 14, 16384.000000 total with type FLOAT
-starting to elaborate linear
-Your calculations took 1.258452 seconds to run.
-

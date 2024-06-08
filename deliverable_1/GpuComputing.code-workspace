@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "SSH FS - marzola",
+			"uri": "ssh://marzola/home/emmanuele.coppola"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.cu": "cuda-cpp",
+			"array": "cpp",
+			"bitset": "cpp",
+			"string_view": "cpp",
+			"initializer_list": "cpp",
+			"utility": "cpp",
+			"__hash_table": "cpp",
+			"__split_buffer": "cpp",
+			"deque": "cpp",
+			"iterator": "cpp",
+			"queue": "cpp",
+			"random": "cpp",
+			"stack": "cpp",
+			"string": "cpp",
+			"unordered_map": "cpp",
+			"unordered_set": "cpp",
+			"vector": "cpp"
+		}
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": []
+	}
+}

@@ -1,4 +1,0 @@
-dimension of matrices pow 2 at 8, 256.000000 total with type INT
-starting to elaborate blocks 8
-Your calculations took 0.000071 seconds to run.
-

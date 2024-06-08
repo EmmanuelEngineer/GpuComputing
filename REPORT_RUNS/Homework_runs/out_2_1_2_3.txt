@@ -1,4 +1,0 @@
-dimension of matrices pow 2 at 2, 4.000000 total with type DOUBLE
-starting to elaborate linear
-Your calculations took 0.000001 seconds to run.
-

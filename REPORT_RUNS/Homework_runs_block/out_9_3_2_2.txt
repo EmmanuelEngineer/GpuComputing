@@ -1,4 +1,0 @@
-dimension of matrices pow 2 at 9, 512.000000 total with type DOUBLE
-starting to elaborate blocks 8
-Your calculations took 0.000730 seconds to run.
-
