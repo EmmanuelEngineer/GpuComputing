@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../../Documents/Università/Magistrale/Appunti/Gpu Computing/codice"
+		},
+		{
+			"name": "GpuComputing",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"string": "c",
+			"iosfwd": "c"
+		}
+	}
+}

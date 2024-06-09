@@ -1,0 +1,2 @@
+slurmstepd: error: execve(): bin/runnable_2: No such file or directory
+srun: error: deeplearning03: task 0: Exited with exit code 2

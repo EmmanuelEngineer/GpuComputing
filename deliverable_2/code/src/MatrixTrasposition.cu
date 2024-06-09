@@ -53,9 +53,26 @@ inline cudaError_t checkCuda(cudaError_t result)
         }                                                                    \
     }
 
-#define TILE_DIM  32
-#define BLOCK_ROWS  8
-#define NUM_REPS  100
+#ifdef TILE_DIM
+#else
+#define TILE_DIM 32
+#endif
+
+#ifdef BLOCK_ROWS
+#else
+#define BLOCK_ROWS 8
+#endif
+
+#ifdef NUM_REPS
+#else
+#define NUM_REPS 100
+#endif
+
+#ifdef DTYPE_code
+#else
+#define DTYPE_code 0
+#endif
+
 
 #define NPROBS 5
 #define STR(s) #s
@@ -79,19 +96,18 @@ typedef double dtype;
 #define DTYPE_str "DOUBLE"
 #endif
 
-
-#define PRINT_MATRIX(A, N, M, ST)                 \
-    {                                             \
-        int i, j;                                 \
-        printf("%s:\n", (ST));                    \
-        for (i = 0; i < (N); i++)                 \
-        {                                         \
-            printf("\t");                         \
-            for (j = 0; j < (M); j++)             \
-                printf("%6.3f ", A[i * (M) + j]); \
-            printf("\n");                         \
-        }                                         \
-        printf("\n\n");                           \
+#define PRINT_MATRIX(A, N, M, ST)                      \
+    {                                                  \
+        int i, j;                                      \
+        printf("%s:\n", (ST));                         \
+        for (i = 0; i < (N); i++)                      \
+        {                                              \
+            printf("\t");                              \
+            for (j = 0; j < (M); j++)                  \
+                printf(DTYPE_spec, A[i * (M) + j]); \
+            printf("\n");                              \
+        }                                              \
+        printf("\n\n");                                \
     }
 
 // Check errors and print GB/s
@@ -101,7 +117,7 @@ void postprocess(const dtype *ref, const dtype *res, int n, float ms)
     for (int i = 0; i < n; i++)
         if (res[i] != ref[i])
         {
-            printf("%d %f %f\n", i, res[i], ref[i]);
+            printf("%d " DTYPE_spec "" DTYPE_spec "\n", i, res[i], ref[i]);
             printf("%25s\n", "*** FAILED ***");
             passed = false;
             break;
@@ -261,10 +277,9 @@ void call_personalized_kernel(int nx, int ny, int mem_size, dtype *gold, cudaEve
 }
 int main(int argc, char **argv)
 {
-
     int power;
     power = atoi(argv[1]);
-    power = power<< 1;
+    power = 1<< power;
     int nx = power;
     int ny = power;
 
@@ -435,7 +450,7 @@ int main(int argc, char **argv)
     // ------------------------
     // kernel_block_shared
     // ------------------------
-    call_personalized_kernel(nx, ny, mem_size, gold, startEvent, stopEvent, d_idata, h_tdata, d_cdata, d_tdata);
+    //call_personalized_kernel(nx, ny, mem_size, gold, startEvent, stopEvent, d_idata, h_tdata, d_cdata, d_tdata);
 
 error_exit:
     // cleanup

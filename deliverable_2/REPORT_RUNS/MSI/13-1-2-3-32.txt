@@ -1,0 +1,10 @@
+
+Device : ù—™Ip
+Matrix size: 8192 8192, Block size: 32 8, Tile size: 32 32
+dimGrid: 256 256 1. dimBlock: 32 8 1
+                  Routine         Bandwidth (GB/s)
+                     copy              229.77
+       shared memory copy              230.36
+          naive transpose              240.71
+      coalesced transpose              229.45
+  conflict-free transpose              227.68

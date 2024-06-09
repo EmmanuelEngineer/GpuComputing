@@ -22,8 +22,6 @@ debug:NVCC_FLAG += -G
 debug:all
 
 
-OBJECTS=$(BUILDDIR)/helper_cuda.o $(BUILDDIR)/helper_string.o
-
 $(TARGETDIR)/runnable_${DTYPE}:
 	@mkdir -p $(@D)
 	$(CC) ${MAIN} -o $@ $(INCLUDE) $(LIBS) $(OPT)$(OPT_NUM)  -D DTYPE_code=$(DTYPE) -D TILE_DIM=$(TILE_DIM) -D BLOCK_ROWS=$(BLOCK_ROWS) -D NUM_REPS=$(NUM_REPS)

@@ -1,0 +1,8 @@
+Matrix size: 1024 1024, Block size: 32 8, Tile size: 32 32
+dimGrid: 32 32 1. dimBlock: 32 8 1
+                  Routine         Bandwidth (GB/s)
+                     copy              728.18
+       shared memory copy              846.28
+          naive transpose               88.21
+      coalesced transpose              354.33
+  conflict-free transpose              841.07
